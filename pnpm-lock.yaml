@@ -1,5 +1,9 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 importers:
 
   .:
@@ -17,8 +21,8 @@ importers:
         specifier: 1.0.1
         version: 1.0.1
       opencolor:
-        specifier: ^0.1.0
-        version: 0.1.0
+        specifier: ^0.2.0
+        version: 0.2.0
 
   packages/pkg-b:
     dependencies:
@@ -29,8 +33,8 @@ importers:
         specifier: 1.0.1
         version: 1.0.1
       opencolor:
-        specifier: ^0.1.0
-        version: 0.1.0
+        specifier: ^0.2.0
+        version: 0.2.0
       pkg-a:
         specifier: 1.0.0
         version: link:../pkg-a
@@ -50,8 +54,8 @@ packages:
     resolution: {integrity: sha512-lTpLlq6AjgvfzuoDwEt7miqoQ9CqrI08yi920il08UrJ71ZWWXXkNmOuPlpPKulsT5lBgR27iIT9ghIb0Tttuw==}
     dev: true
 
-  /opencolor@0.1.0:
-    resolution: {integrity: sha512-xu4HUFAFqOLqtORe0j2o4TJLeeTDYIUCAGh35UlYZX2kesrCpHRx6qnNzCn9/0uePjCzb2HQdj94Muxyhrcsgw==}
+  /opencolor@0.2.0:
+    resolution: {integrity: sha512-Y5poyJviAWIp/TJ+8aSKKpEz4nSlU8d9coe6z3aNTHGzKVGxtGneHzzGp9sB5f3L0XweTB5Xi/oP4kJsvtH7Uw==}
     dependencies:
       tinycolor2: 1.6.0
     dev: false
