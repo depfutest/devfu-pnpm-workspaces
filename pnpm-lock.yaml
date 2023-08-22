@@ -1,0 +1,61 @@
+lockfileVersion: '6.0'
+
+importers:
+
+  .:
+    devDependencies:
+      jquery:
+        specifier: 2.1.2
+        version: 2.1.2
+      pkg-b:
+        specifier: 1.0.0
+        version: link:packages/pkg-b
+
+  packages/pkg-a:
+    dependencies:
+      is-array:
+        specifier: 1.0.1
+        version: 1.0.1
+      opencolor:
+        specifier: ^0.1.0
+        version: 0.1.0
+
+  packages/pkg-b:
+    dependencies:
+      clone:
+        specifier: 2.1.1
+        version: 2.1.1
+      is-array:
+        specifier: 1.0.1
+        version: 1.0.1
+      opencolor:
+        specifier: ^0.1.0
+        version: 0.1.0
+      pkg-a:
+        specifier: 1.0.0
+        version: link:../pkg-a
+
+packages:
+
+  /clone@2.1.1:
+    resolution: {integrity: sha512-h5FLmEMFHeuzqmpVRcDayNlVZ+k4uK1niyKQN6oUMe7ieJihv44Vc3dY/kDnnWX4PDQSwes48s965PG/D4GntQ==}
+    engines: {node: '>=0.8'}
+    dev: false
+
+  /is-array@1.0.1:
+    resolution: {integrity: sha512-gxiZ+y/u67AzpeFmAmo4CbtME/bs7J2C++su5zQzvQyaxUqVzkh69DI+jN+KZuSO6JaH6TIIU6M6LhqxMjxEpw==}
+    dev: false
+
+  /jquery@2.1.2:
+    resolution: {integrity: sha512-lTpLlq6AjgvfzuoDwEt7miqoQ9CqrI08yi920il08UrJ71ZWWXXkNmOuPlpPKulsT5lBgR27iIT9ghIb0Tttuw==}
+    dev: true
+
+  /opencolor@0.1.0:
+    resolution: {integrity: sha512-xu4HUFAFqOLqtORe0j2o4TJLeeTDYIUCAGh35UlYZX2kesrCpHRx6qnNzCn9/0uePjCzb2HQdj94Muxyhrcsgw==}
+    dependencies:
+      tinycolor2: 1.6.0
+    dev: false
+
+  /tinycolor2@1.6.0:
+    resolution: {integrity: sha512-XPaBkWQJdsf3pLKJV9p4qN/S+fm2Oj8AIPo1BTUhg5oxkvm9+SVEGFdhyOz7tTdUTfvxMiAs4sp6/eZO2Ew+pw==}
+    dev: false
