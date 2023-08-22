@@ -1,12 +1,16 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 importers:
 
   .:
     devDependencies:
       jquery:
-        specifier: 2.1.2
-        version: 2.1.2
+        specifier: 3.7.0
+        version: 3.7.0
       pkg-b:
         specifier: 1.0.0
         version: link:packages/pkg-b
@@ -46,8 +50,8 @@ packages:
     resolution: {integrity: sha512-gxiZ+y/u67AzpeFmAmo4CbtME/bs7J2C++su5zQzvQyaxUqVzkh69DI+jN+KZuSO6JaH6TIIU6M6LhqxMjxEpw==}
     dev: false
 
-  /jquery@2.1.2:
-    resolution: {integrity: sha512-lTpLlq6AjgvfzuoDwEt7miqoQ9CqrI08yi920il08UrJ71ZWWXXkNmOuPlpPKulsT5lBgR27iIT9ghIb0Tttuw==}
+  /jquery@3.7.0:
+    resolution: {integrity: sha512-umpJ0/k8X0MvD1ds0P9SfowREz2LenHsQaxSohMZ5OMNEU2r0tf8pdeEFTHMFxWVxKNyU9rTtK3CWzUCTKJUeQ==}
     dev: true
 
   /opencolor@0.1.0:
